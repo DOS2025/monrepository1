@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="fr">
+    <head>
+                <!--  CECI EST UN COMMENTAIRE-->
+                <!--  -->
+            <!-- se realis avec ( ctr+: ou ctr+shift+/)-->
+            <title> Mon Premier Site Internet</title>
+            <link rel="icon" href="images/favicon.ico" type="imge/x-icon">
+            <!--DU  CODE  CSS  -->
+            <!-- création d'une feuille de style pour l'application de style sur toutes les page
+            c'est la troisième façon de faire du css -->
+             <link rel="stylesheet" href="design/style.css">
+
+    
+    </head>
+    <body>   
+
+            <section id="bienvenue">
+                    <!-- CREATION D'EN TETE -->
+                <div class="conteneur">   
+                    <header>
+                        Jopon Tourisme
+                        <span id="slogan"> L'expert des voyages de rêve au pays du soleil levant.</span>             
+                    </header>
+                </div>
+            </section>
+
+                            <!-- ------------------- -->
+                            <!-- les ordres  des titres -->
+                                <!-- <h1>Titre1</h1>
+                    <h2>Titre2</h2>
+                    <h3>Titre3</h3>
+                    <h4>titre4</h4>
+                    <h5>titre5</h5>
+                    <h6>titre6</h6>
+                    <p>salut à vous tous</p>   
+                        <p></p> couple de balises pour définir un paragraphe -->
+                        <!-- <p>salut le monde</p> -->
+                    <!-- <br> balises pour définir un retour à la ligne-->
+                        <!-- <div>
+
+                            bonjour <br>
+                            bonsoir <br>
+                        </div>
+                        
+                        <div>
+                            <p>comment vous allez </p>
+                        </div> ----> 
+                        <!-- <img src="images/imagejp.jpeg" alt="Photo sur le Japon">  -->
+     
+            <section class="contenu conteneur">    <!-- associer plusieurs classe à la même balise -->
+                <!-- TOP -->
+                <section>
+                    <!-- insertion d'une image sur la page d'accuei. l'atribut alt permet lajout d'un texte aternatif a limage -->
+                    
+                    <!-- avec le css on a toujour propriété: valeur: ici style n'est pas une balise c'est un attribut -->
+                
+                    <!-- <h1>Bienvenue sur <span class="mot">mon </span>site</h1> -->
+                    <h1> Nos meilleurs destination</h1>
+                    <p  id="top"> 
+                        
+                        Sélectionnez votre future destination dans une petite sélection des villes plus demandées par nos touristes
+                     <!-- <i>Petit <u>texte de</u> <b class="mot">présentation</b></i> -->
+                    </p>
+                    <section id="flexbox-ville">
+
+                        <a href="" id="tokyo" class="ville">Tokyo</a>
+
+                        <!-- modification rendre tjr l'image cliquable aprèe l'apllication de : degrid-column:  2/4;
+                         NB d'une façon générale id peut être associé à la balise a et tout fonctione bien comme cas 1 on dit 
+                         que i'id et la classe sont glisés sous le lien -->
+                        <a href="" id="kyoto" class="ville">Kyoto </a>  
+
+                        <a href=""><div id="osaka" class="ville"> Osaka</div></a>
+
+                        <a href=""><div id="nara" class="ville"> Nara</div></a>
+                        
+                    </section>
+                    <!-- EN VOIR PLUS stylisé alignement à droite, separer de image de 10px et avec une icon -->
+                    <div style="text-align: right; margin-top: 10px;">
+                        <!-- <a href="" style="display: inline-flex ; align-items: center; gap: 20px; color: #ff7373;"> En voir plus <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-4 4l4-4m-4-4l4 4"/></svg></a></div> -->
+                        <!-- OU on peut faire -->
+                        <a href="" id="voir"> En voir plus <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-4 4l4-4m-4-4l4 4"/></svg></a>
+                    </div>
+                </section>
+                 <!-- les b ou strong sont utilisées pour mettre en gras et la balise i pour mettere en en italique-->
+                <!-- <section> -->
+            </section>
+
+                <!-- PIED DE PAGE  -->
+        <footer>
+            <div class="conteneur" id="flexbox-foot">
+                <!--  justify-content: space-between  utilser pour avoir un espace propotionnel entre les elemnts  
+                  space-around pour espce autour-->
+                  <div id="logo-foot">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3925/3925253.png" alt=" Japon" style="width: 70px; display: block;;"/>
+                     2025 © Japon Tourisme
+                 </div>
+                <!-- commande pour cyrigth alt +0169 -->
+                <nav>   
+                    <!-- <h2>Menu</h2> -->
+                    <!--  
+                <p><a href="index.html"> Accueil</p></a>
+                <p><a href="test/apropo.html">A propos</p></a>
+
+                LE LIEN VERS UN SITE 
+                <p><a href="https://believemy.com" target="_blank">Site de believemy</p></a>
+                        ---->
+                        <!-- target="_blank" permet l'ouverture de la page dans une nouvelle onglet-->
+
+                    <!-- ceaction de liste ordonnée (avec ol) ou de liste non ordonnée(li).. -->
+                        <ul>
+                            <li><a href="index.html"> Accueil</a></li>
+                            <li><a href="apropo.html">A propos</a></li>
+                        </ul>
+               </nav>
+                        <!-- </section> -->
+            </div>
+        </footer>
+
+
+    </body>
+</html> 

@@ -1,0 +1,306 @@
+/* ici STYLE EST UNE BALISE */
+/*element {
+    proprite: valeur:
+}
+element{
+    proprite: valeur:
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital@0;1&display=swap');
+
+*{
+    box-sizing: border-box;/*pour empêcher d'augmenter la taille du contenu des balises lors de l'utilisation de margin*/
+}
+
+    img {
+
+        width: 100%; 
+    }
+
+    .mot {
+        /* #mot si mot est defini entant que id.(.mot puisque 
+        mot est defini comme classe dans index) */
+        color: rgb(71, 42, 165);
+    }
+
+    nav li,nav a {
+        color: #6c0636;
+    }
+
+
+
+h1{
+    font-size: 50px;
+    font-family: "pacifico", cursive;
+    /* margin-top: 10px; pour definir la marge du haut */
+    margin: 10px 0;/* bonne manière: 10 en et en bas  0 à gauche et à droite */
+    text-align: center; /* pour centrer le texte*/
+}
+h2{
+    margin: 0.83cm 0 0 0;
+
+}
+
+
+body{
+    font-family: "Roboto", serif;
+    margin: 0;
+}
+
+ul{
+
+    /*Margin: si le bas n'est pas donné alors = haut, si la gauche n'est pas donné alors = droite*/
+    /*Margin: 5px 0 5px 0; */
+    margin: 5px 0;
+    /*Margin: 5px 0 10px;*/
+   /* margin: 10px;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 5px;*/
+    padding: 0;
+    list-style-type: none; /*pour supprimer les points des liens*/
+    display: flex; /* met les elemnt cote a cote*/
+    gap: 50px; /*gap separe les elemnt*/
+
+
+}
+header{
+/*-non(black,white purple--)
+- code en hexadecimal
+-rgb
+-fgba (a pour transparent)
+
+/* background-color: #FE4B4B; */
+/* text-align: center;  */
+    font-size: 60px;
+    font-family: 'pacifico', 'cursive';
+    color: white;
+    text-shadow: 0 0 30px black;
+/* padding-top: 300px; */
+}
+
+footer{
+    /* color: rgb(0, 170, 255);
+    background-color: black;
+    background-image: url("https://static.vecteezy.com/ti/vecteur-libre/t2/6999783-vague-style-japonais-motif-fond-gratuit-vectoriel.jpg");
+    background-size:100px;
+    background-repeat:repeat-x ; */
+    background: left/100px url("https://static.vecteezy.com/ti/vecteur-libre/t2/6999783-vague-style-japonais-motif-fond-gratuit-vectoriel.jpg"), black;
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 15px;   
+   
+}
+
+a{
+    text-decoration: none; /* pour faire disparaitre les petit de dessous du texte des liens*/
+}
+
+#bienvenue {
+    background-image: url("../images/imagejp.jpeg") ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; alignement du contenu et alignement a gauche par defaut */
+    align-items: center; /* /* centre sur la page  */
+    /*flex-direction:   ; /* pour mettre les éléments les uns après les autres ou les element cote à cote*/
+} 
+
+#slogan{
+    display: block;  /* pour transformer la balise span en une balise de type block */
+    font-size: 30px;
+    font-family: "Roboto", Arial, sans-serif;
+
+}
+
+#top {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#tokyo{
+    background-image: url("https://media.vogue.fr/photos/5e28668feba60700084eac83/4:3/w_4776,h_3582,c_limit/GettyImages-893365942.jpg") ;
+       grid-row: 1/3 ;  /* commence à la ligne a inclue et se termine à la ligne b exclue*/
+   
+
+}
+
+#kyoto{
+    background-image: url("https://media.istockphoto.com/id/902966276/fr/photo/kyoto-japon-au-printemps.jpg?s=612x612&w=0&k=20&c=aUtfBnSZEnBDr3gjWoD0w28b9YVGZ4oVm4ss-5HaCDg=");
+    /* pour qu'un element precis occupe une place donnée on definit combien de place prend un élémnt de colonne */
+    grid-column:  2/4; /* colonne 2 jusqu'a 4 exclue*/
+   /* grid-row: ; */
+}
+
+#osaka{
+    background-image: url("https://www.dokodemo.fr/wp-content/uploads/2016/09/chateau-osaka.jpg");
+
+}
+
+#nara{
+    background-image: url("https://cdn-s-www.leprogres.fr/images/32C7EAE5-A8A8-4294-AC67-2DCF724D753F/NW_raw/le-fameux-temple-todai-ji-l-un-des-symboles-de-la-ville-de-nara-photo-progres-adobestock-1580490012.jpg") ;
+
+}
+
+#flexbox-ville{
+    /*display: flex; /* disposition aligné des image* "flexbox"*/
+   /*  gap: 30px; /* separe les images */
+    display: grid;
+   /* grid-template-columns: repeat(3, 300px); /*pour definir le nombr de colone de grille repeat pour 
+    montrer que les colonnes st identiques et largeur celle de nos images* grid permet un alignement sous
+     forme de tableau les elements* 1fr pour l'adapter à tout type d'ecran*/
+    /* grid-template-columns: 1fr 2fr 1fr;
+     /*grid-template-rows: 1fr 1.5fr; /*defini la hauteur de grid*/
+     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+
+}
+
+#voir{
+
+    display: inline-flex ; 
+    align-items: center; 
+    gap: 0;
+    color: #ff7373;
+    transition: all 0.4s;
+}
+
+#voir:hover{
+    gap: 10px;
+}
+/*
+#voir:visited{ /*s'utilise pour ce qui est gardé en historique pour un navigateur
+    font-weight: bold;
+}*/
+
+
+.ville{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+     /* min-width: 300px;  */
+    border: 3px solid white; /*epaisseur type et couleur de bordure des images*/
+    transition: all 0.2s; /* on peut également utiliser border pour prendre en compte uniquement les bordure*/
+    /* cursor: ; */
+
+    border-radius: 30px; /* arrondissement du bord des image*/
+    /* margin: 0 50px;*//* un méthode  pour separer les images sans utilisation de gap */
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 30px black ; /* pour separer le texte de l'image*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*box-shadow:  0 0 400px black; /*fonctionne de la même manière que tex-shadow*/
+    /*box-shadow:  0 0 400px rgba(0, 0, 0, 0.1); */
+}
+
+.ville:hover{ /* apparence dynamique hover*/
+    border: 3px solid #ff7373;
+
+}
+/* les trois selecteurs css */
+/* +++++++++++++++++ */
+/* 1) element1 = applique à element1 */
+/* element1, element2 = applique à element1 et element2 */
+/* element0 element1 = applique à element1 s'il est dans element0 */
+/* +++++++++++++++++++++++++++ */
+.italic{
+    font-style:italic;
+
+ }
+
+.underline{
+    text-decoration: underline;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+ .contenu {
+    padding: 10; /* la seule ligne qui resume toutes les lignes de bas */
+    /* padding-left: 10px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-top: 10px; */
+}
+.conteneur{
+    width: 1300px;
+    margin: auto;
+
+}
+#flexbox-foot{
+ display: flex; 
+ align-items: center; 
+ justify-content: space-between;
+ }
+
+/* LE RESPONSIVE DESIGN */
+/* 1300: notebook */
+
+@media all and ( max-width: 1350px) {  /*cette fonction précise le type de l'appareil*/
+    .conteneur {
+        width: 800px;
+    }
+
+    #flexbox-ville{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #kyoto{
+        grid-column: auto;
+    }
+
+    #nara{
+        grid-column: 1/3;
+    }
+
+
+} 
+
+
+/* 768: tablette */
+
+ @media all and ( max-width: 800px){
+    #conteneur{
+        width: 500px;
+    }
+    #flexbo-ville {
+        grid-template-columns: 1fr;
+    }
+
+    #kyoto{
+        grid-row: auto;
+    }
+
+    #nara{
+        grid-column: 1/3;
+    }
+
+    #flexbox-foot{
+    gap: 50px;
+    flex-direction: column;
+    }
+    #logo-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+ }
+
+/* 480: smartphone */
+@media all and (max-width: 570px)  {
+    .conteneur{
+        width: 100%;
+    }
+    #bienvenue{
+        padding: 15px;
+    } 
+ }
